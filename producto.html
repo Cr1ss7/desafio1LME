@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="JavaScript/recibo.js"></script>
+    <link href="css/productos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da82b93ca0.js" crossorigin="anonymous"></script>
+	<title></title>
+</head>
+<body onload="getImagen('pro')" >
+    <main>
+        <header>
+            <nav class="logo">
+                <img src="css/img/logo-MMs.png" alt="M&M">
+            </nav>
+        </header>
+    <article class="article-box">
+        <section class="img-box">
+            <img src="" id="item"  alt="producto">
+        </section>
+        <section class="info-box">
+            <div><h2 class="titulo-box" id="tituloH2" name=""><h2>
+               <p class="texto-info" id="P1"></p>
+               <p class="texto-info" id="P2"></p>
+               <p class="texto-info" id="P3"></p></div>
+               <form>
+                <div class="form">
+                    <article>
+                        <h1 class="h1-title-form">Nombre: </h1><input type="text" name="nombre" id="nombre" required>
+                    </article>
+                    <article>
+                        <h1 class="h1-title-form">Correo Electronico: </h1><input type="email" name="email" id="email" ><span id="confirmEmail" required></span>
+                    </article>
+                    <article>
+                        <h1 class="h1-title-form">Cantidad de Productos:</h1><input type="text " name="cantidad" id="cantidad" class=".error"><span id="confirmEntero" required></span>
+                    </article>
+                    <input type="button" name="btn1" value="Imprimir Recibo" onclick="cotizacion('pro')" class="impr" id="impr">
+                </div>    
+            </form>
+            <div class="pop" id="pop">
+                 <div class="recibo" id="recibo">
+                     <i class="fa-solid fa-square-xmark" id="fa-solid fa-square-xmark" ></i>
+                     <article>
+                         <h1>NOMBRE: </h1><h3 name="nombreobtenido" id="nombreobtenido"></h3>
+                     </article>
+                     <article>
+                         <h1>CORREO ELECTRONICO: </h1><h3 name="correoobtenido" id="correoobtenido"></h3>
+                     </article>
+                     <article>
+                         <h1>SUBTOTAL A PAGAR:</h1> <h3 name="subtotalPagar" id="subtotalPagar"></h3>
+                     </article>
+                     <article>
+                         <h1>IVA DE LA COMPRA:</h1><h3 name="ivaPagar" id="ivaPagar"></h3>
+                     </article>
+                     <article>
+                         <h1>TOTAL A CANCELAR:</h1><h3 name="totalCancelar" id="totalCancelar"></h3>
+                     </article>
+                 </div>
+             </div>
+        </section>
+       </article>
+    </main>
+    <footer>
+		<p>Todos los derechos reservados</p>
+		<p>Desarrollo de software</p>
+	</footer>
+</body>
+</html>

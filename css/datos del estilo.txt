@@ -1,0 +1,9 @@
+colores
+#F0CB2A Amarillo
+#855136 Chocolatoso
+#F0F0F0 Blanco hueso
+
+fuentes
+Open sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); //Esto va arriba de todo el css
+font-family: 'Open Sans', sans-serif;

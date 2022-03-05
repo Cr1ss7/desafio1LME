@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+:root{
+	--principal-color: #F0CB2A;
+	--secondary-color: #855136;
+	--box-color: #F0F0F0;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: auto;
+    width: auto;
+	background-color: var(--secondary-color);
+}
+article{
+    flex-direction: column;
+}
+/*contenedor de recetas*/
+
+/*inicio del menu*/
+header{
+    width: 100%;
+    max-width: 100% ;
+	background-color: var(--secondary-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5 ease;
+    padding-top: 25px;
+    padding-bottom: 25px;
+	background-color: var(--principal-color);
+}
+
+.nav.active{
+	background-color: var(--secondary-color);
+    padding: 15px;
+}
+
+.nav.active .logomm,
+.nav.active a{
+    color: #fff;
+}
+
+.nav.active a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.logomm{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logomm img{
+	width: 110px;
+	min-width: 150px;
+	padding: 5px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+
+.menu li a{
+    color : #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+/*fin del menu */
+
+/*encabezado de "Recetas"*/
+.encabe{
+    text-align: center;
+    width: 100% 10 ;
+    padding: 20px;
+    font-family: 'Fredoka', sans-serif;
+    display: block;
+}
+
+.encabe h1{
+    font-size: 55px;
+	color: #ffffff;
+}/*fin del encabezado*/
+
+/*Primer div=amarillo*/
+.conteiner1{
+
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+}
+
+.contendio1 figure{
+    display: flex;
+    height: 250px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 10px rgba(0,0,0,0.50);
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+
+.contendio1 figure img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contendio1 figure .titulo{
+    position: absolute;
+    width: 26%;
+    height:38%;
+    margin: auto;
+	color: #ffffff;
+    display: flex;
+    justify-content: center;
+	background: var(--principal-color);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contendio1 figure:hover > .titulo{
+    opacity: 3;
+    visibility: visible;
+}
+
+.contendio1 figure:hover > .titulo{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contendio1 figure .titulo h3{
+    margin-top: 30%;
+}
+
+.conteiner1 .contendio2{
+    width: 50%;
+    background-color: aliceblue;
+    border-style: solid;
+    height: auto;
+    border-width: 0.5em;
+    border-color: black;
+    margin: 10px 10px;
+
+}
+
+.conteiner1 section .inngredientes{
+    width: 20%;
+    height: auto;
+
+}
+
+
+.conteiner1 .pasos{
+    width: 40%;
+    height: auto;
+}
+
+
+.date{
+    margin: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pasos ul{
+    list-style:circle;
+}
+
+.pasos li{
+    width: 60vh;
+}
+
+.pasos{
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+
+
+
+
+/*segundo div=verde*/
+.conteiner2{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    
+}
+
+
+.conteiner2 .contendio2{
+    width: 50%;
+    background-color: aliceblue;
+    border-style: solid;
+    height: auto;
+    border-width: 0.5em;
+    border-color: black;
+    margin: 17px 17px;
+
+}
+
+.conteiner2 section .inngredientes{
+    width: 20%;
+    height: auto;
+
+}
+
+.conteiner2 .pasos{
+    width: 20%;
+    height: auto;
+
+}
+
+.date{
+    margin: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pasos ul{
+    list-style:circle;
+}
+
+.pasos li{
+    width: 60vh;
+}
+
+.pasos{
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/*Tercer div=Cafè*/
+.conteiner3{
+    background-color: #855136;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+
+}
+
+
+.conteiner3 .contendio2{
+    width: 50%;
+    margin: 15px 15px;
+    background-color: aliceblue;
+    border-style: solid;
+    height: auto;
+    border-width: 0.5em;
+    border-color: black;
+}
+
+.conteiner3 section .inngredientes{
+    width: 20%;
+    height: auto;
+}
+
+.conteiner3 .pasos{
+    width: 20%;
+    height: auto;
+
+}
+
+.date{
+    margin: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pasos ul{
+    list-style:circle;
+}
+
+.pasos li{
+    width: 60vh;
+}
+
+.pasos{
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*Cuarto div=Naranga*/
+.conteiner4{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+.conteiner4 .contendio2{
+    width: 50%;
+    margin: 15px 15px;
+    background-color: aliceblue;
+    border-style: solid;
+    height: auto;
+    border-width: 0.5em;
+    border-color: black;
+
+
+
+}
+
+.conteiner4 section .inngredientes{
+    width: 20%;
+    height: auto;
+ 
+
+}
+
+.conteiner4 .pasos{
+    width: 20%;
+    height: auto;
+
+}
+
+.date{
+    margin: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pasos ul{
+    list-style:circle;
+}
+
+.pasos li{
+    width: 60vh;
+}
+
+.pasos{
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer{
+	background-color: var(--principal-color);
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	font-family: 'Open',sans-serif;
+	padding: 15px;
+}

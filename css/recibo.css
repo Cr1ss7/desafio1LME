@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); 
+
+body{
+    background-color: #F0CB2A ;
+}
+
+/*ESTILO FORMULARIO*/
+.form{
+    background-color: #F0F0F0;
+    width: 40%;
+    margin: 3% auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 10px 10px 10px #bb9c14;
+    border: 4px dashed #855136;
+}
+
+.form article{
+    display: flex;
+}
+
+.form article h1{
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 45%;
+}
+
+.form article input{
+    width: 67%;
+    outline: none;
+    font-size: 1em;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #855136;
+
+}
+
+.impr{
+    border: 3px solid #06a78c;
+    margin-top:  25px;
+    margin-left: 0px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #09b12d;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.error.er{
+    border: 4px solid red;
+}
+
+/*ESTILO POP UP*/
+.pop{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.5);
+    backdrop-filter: blur(5px);
+    visibility: hidden;
+}
+
+.pop.active{
+    visibility: visible;
+}
+
+/*ESTILO RECIBO*/
+.recibo{
+    background-color: #F0F0F0;
+    border: 4px dashed #14609e;
+    border-radius: 10px;
+    width: 40%;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+
+    opacity: 0;
+    transition: 1 ease all;
+    transform: scale(0.7);
+}
+
+.recibo>article{
+    display: flex;
+}
+
+.recibo>article h1{
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+    width: 37%;
+    font-size: 1.2em;
+}
+
+h3{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #14609e;
+    border-radius: 5px;
+    margin-left: 0px;
+    width: 50%;
+    font-weight: lighter;
+}
+
+.recibo.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*Estilo boton cerrar*/
+.recibo .fa-solid{
+    position: relative;
+    text-align: right;
+    font-size: 20px;
+    color: darkgray;
+    display: block;
+    transition: .3 ease all;
+}
+
+.recibo .fa-solid:hover{
+    opacity: 100%;
+    color: darkred;
+}

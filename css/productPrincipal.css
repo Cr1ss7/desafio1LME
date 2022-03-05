@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+	--principal-color: #F0CB2A;
+	--secondary-color: #855136;
+	--box-color: #F0F0F0;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*inicio del menu*/
+header{
+    width: 100%;
+    max-width: 100% ;
+	background-color: var(--principal-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5 ease;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.nav.active{
+	background-color: var(--secondary-color);
+    padding: 15px;
+}
+
+.nav.active .logomm,
+.nav.active a{
+    color: #fff;
+}
+
+.nav.active a:hover{
+    background: #fff;
+    color: #000;
+}
+
+.logomm{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logomm img{
+	width: 110px;
+	min-width: 150px;
+	padding: 5px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    list-style: none;
+    margin: 10px;
+}
+
+
+.menu li a{
+    color : #000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.menu li a:hover{
+    padding: 5px 10px;
+    background: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+
+/*fin del menu */
+
+main{
+	background-color: var(--secondary-color);
+	width: 100%;
+	min-width: 250px;
+	min-height: 100vh;
+}
+
+.items{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 100%;
+	min-width: 250px;
+}
+
+.item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 25px;
+	background-color: var(--box-color);
+	border-radius: 16px;
+	padding: 15px;
+	text-align: center;
+	min-height: 400px;
+	min-width: 280px;
+}
+
+.item>a{
+	text-decoration: none;
+	font-weight: bold;
+	color: var(--principal-color);
+	background-color: var(--secondary-color);
+	padding: 5px;
+	width: 50%;
+	border-radius: 16px;
+	transition: 0.5s;
+}
+
+.item>a:hover{
+	background-color: var(--principal-color);
+	color: var(--secondary-color);
+}
+
+.imagen{
+	width: 300px;
+	min-width: 240px;
+}
+
+.imagen>img{
+	width: 100%;
+	min-width: 250px;
+}
+
+#pro{
+	border-radius: 16px;
+	background-color: #F0CB2A;
+	color: #855136;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px;
+}
+
+.manisito{
+	margin-bottom: 10px;
+}
+
+.golosina{
+	width: 300px;
+	height: 300px;
+}
+
+footer{
+	background-color: var(--principal-color);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
